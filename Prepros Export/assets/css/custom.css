@@ -11,6 +11,11 @@ html, body, div, span, h1, p, a, ul, li, footer, header, nav {
 	vertical-align: baseline;
 }
 
+a {
+	color: inherit !important;
+	text-decoration: inherit !important;
+}
+
 footer, header, nav {
 	display: block;
 }
@@ -529,10 +534,10 @@ body.is-loading #wrapper.fade-in:before {
 }
 
 #intro.hidden + #header .logo {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 	opacity: 1;
 	visibility: visible;
 }
@@ -1183,7 +1188,7 @@ li:hover .svg-contact > * {
 }
 
 .img-content {
-	width: 50%;
+	width: 40%;
 	overflow: hidden;
 	display: inline-block;
 }
@@ -1215,8 +1220,10 @@ li:hover .svg-contact > * {
 
 .main-content {
 	float: right;
-	width: 50%;
+	width: 60%;
 	border-top: none;
+	height: 600px;
+	overflow: hidden;
 }
 
 .clearfix:after {
@@ -1637,14 +1644,30 @@ li:hover .svg-contact > * {
 /* Footer */
 
 .footer-section {
-	padding: 2.5rem 0;
+	padding-top: 0.5rem;
 	color: white;
 	background-color: #3e3e3d;
+	text-align: center;
+}
+
+.black {
+	background-color: black;
+	padding: 0.5rem 0;
+}
+
+.location-container {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.left {
+	text-align: left;
+	margin: 0 auto;
 }
 
 .center {
 	text-align: center;
-	margin: 0;
+	margin-bottom: 0;
 }
 
 .center .fa {
